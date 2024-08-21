@@ -115,7 +115,7 @@ const MainScreen = () => {
             {isOpen1 && (
                 <div className="sidebar-width-res flex w-12 h-12 top-0 left-0 absolute "
                      style={{width: "85vw", height: "100vh", zIndex: 50}}>
-                    <Sidebar/>
+                    <Sidebar section1Ref={section1Ref} section2Ref={section2Ref} section3Ref={section3Ref} section4Ref={section4Ref} section5Ref={section5Ref} />
                     <div className={"h-16 w-16 flex justify-center items-center"} onClick={toggleDiv1}>
                         <img src={cross} alt="" className={'h-8'}/>
                     </div>
