@@ -176,13 +176,20 @@ const MainScreen = () => {
                         className="ai-dev-main-title custom-height-70 w-full flex flex-col justify-center items-center">
                         <div
                             className={"ai-dev-div w-full h-[100%] gap-10 flex-col flex justify-center items-center"}>
-                            <p className="Ai-dev-text">AI</p>
-                            <p className="Ai-dev-text">DEV</p>
+                            <p className="Ai-dev-text">
+                                <span>A</span>
+                                <span>I</span>
+                            </p>
+                            <p className="Ai-dev-text">
+                                <span>D</span>
+                                <span>E</span>
+                                <span>V</span>
+                            </p>
                         </div>
 
                     </div>
                     <p className="text-container1 uppercase Ai-dev-p Ai-dev-bottom-text-resp w-full flex justify-center items-center">
-                        AI DEV [
+                    AI DEV [
                         <span className="text-container">
         <span className="font-bold green-text">
             Craft websites, Deploy smart contracts, Predict Prices

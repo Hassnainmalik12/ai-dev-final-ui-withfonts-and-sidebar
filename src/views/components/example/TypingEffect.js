@@ -1,5 +1,4 @@
 import React, { useState, useEffect, useRef } from 'react';
-
 const TypingEffect = ({ text = '' }) => {
     const [textColor, setTextColor] = useState('white');
     const [displayedText, setDisplayedText] = useState('');
@@ -63,7 +62,7 @@ const TypingEffect = ({ text = '' }) => {
 
     return (
         <div style={{ position: 'relative', display: 'inline-block', whiteSpace: 'pre-wrap', wordWrap: 'break-word' }}>
-            <span ref={textRef} style={{ color: textColor, fontSize: '2em', fontFamily: 'fantasy' }}>{displayedText}</span> {/* Adjust font size */}
+            <span ref={textRef} className={"custom-font"} style={{ color: textColor, fontSize: '2em'}}>{displayedText}</span> {/* Adjust font size */}
             <span
                 ref={cursorRef}
                 style={{

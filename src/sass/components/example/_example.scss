@@ -1,3 +1,10 @@
+@import "../../values/fonts";
+
+.card-text-res{
+  font-size: 3em;
+  @include font_Gridular_Regular;
+}
+
 @media (max-width: 600px) {
 
   .card-res{

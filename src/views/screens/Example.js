@@ -60,7 +60,7 @@ const Card = ({ card }) => {
                 <div className="flex flex-col ">
                     <img src={card.url} alt="" className="w-3/2 text-center h-auto card-img-res" />
                     <div className=" text-2xl uppercase text-white flex flex-col justify-center items-center py-5">
-                        <h1 className="card-text-res text-white w-4/5">
+                        <h1 className="card-text-res card-text text-white w-4/5">
                             <TypingEffect text={card.text} />
                         </h1>
                         <div className="buttons h-full w-full py-1  flex gap-5 justify-start">

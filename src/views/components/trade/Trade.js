@@ -15,18 +15,25 @@ const Trade = () => {
             <div className={"trade-marquee-area  h-1/2 w-full flex justify-center items-center"}>
                 <div className={"marquee-text-area w-full flex flex-col justify-center items-center relative"}>
 
-                    <marquee className={"custom-marquee"} width="100%" direction="left" height="105px"
+                    <marquee className={"custom-marquee"} width="100%" direction="left" height="225px"
                              scrollamount="20">
-                        Website AI x Sniper AI x Token Deployer x AI face Swap x Voice
-                        AI x MEME Generator x Uncensored AI
+                        <h1> Website AI x Sniper AI x Token
+                            Deployer
+                            x AI face Swap x Voice
+                            AI x
+                            MEME Generator x Uncensored AI</h1>
                     </marquee>
 
-                    <img src={arrow} alt="" className={"rotating-image absolute h-[60%] w-auto top-[42px]"} style={{height:"250px",mixBlendMode:'multiply'}}/>
+                    <img src={arrow} alt="" className={"rotating-image absolute h-[60%] w-auto top-[45px]"}
+                         style={{height: "400px", mixBlendMode: 'multiply'}}/>
 
-                    <marquee className={"custom-marquee"} width="100%" direction="right" height="105px"
+                    <marquee className={"custom-marquee"} width="100%" direction="right" height="225px"
                              scrollamount="20">
-                        Website AI x Sniper AI x Token Deployer x AI face Swap x Voice
-                        AI x MEME Generator x Uncensored AI
+                        <h1> Website AI x Sniper AI x Token
+                            Deployer
+                            x AI face Swap x Voice
+                            AI x
+                            MEME Generator x Uncensored AI</h1>
                     </marquee>
                 </div>
             </div>
