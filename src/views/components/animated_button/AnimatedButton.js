@@ -9,7 +9,7 @@ const AnimatedButton = () => {
                 <div className={"lets-connect w-[70%] h-[50%]  flex flex-col justify-between items-center"}>
                     <h1 >LET'S CONNECT</h1>
                     <div className={"animated-button-div-res w-full py-2  flex justify-center gap-10"}>
-                        <button className=" animated-button uppercase rounded-3xl px-10 flex items-center justify-center gap-5">
+                        <button className=" animated-button uppercase rounded-3xl flex items-center justify-center">
                             <div className={"image-res h-6 w-6  bg-white rounded-full"}>
                                 <img src={github} alt=""/>
                             </div>

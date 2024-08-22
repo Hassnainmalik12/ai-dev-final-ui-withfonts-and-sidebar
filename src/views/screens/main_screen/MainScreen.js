@@ -44,6 +44,7 @@ const MainScreen = () => {
     };
 
     const ref = useRef(null);
+    const sectiontopRef = useRef(null);
     const section1Ref = useRef(null);
     const section2Ref = useRef(null);
     const section3Ref = useRef(null);
@@ -100,23 +101,23 @@ const MainScreen = () => {
     }, []);
 
     return (
-        <div className="main w-screen h-screen">
+        <div className="main w-screen h-screen" ref={sectiontopRef}>
             {/*burger button*/}
             <div
-                className="custom-height-7vh  w-full flex  items-center cursor-pointer"
+                className="custom-height-7vh  w-full flex  items-center cursor-pointer fixed bg-red-7"
                 onClick={toggleDiv1}
             >
-                <div className="w-16 h-16 mt-6 flex hidden items-center justify-center">
+                <div className="w-16 h-16 mt-6 flex hidden items-center justify-center ">
                     <img src={burger} alt="Burger Menu" className="h-8"/>
                 </div>
             </div>
 
             {/* Toggleable Div */}
             {isOpen1 && (
-                <div className="sidebar-width-res flex w-12 h-12 top-0 left-0 absolute "
+                <div className="sidebar-width-res flex w-12 h-12 top-0 left-0 fixed"
                      style={{width: "85vw", height: "100vh", zIndex: 50}}>
                     <Sidebar section1Ref={section1Ref} section2Ref={section2Ref} section3Ref={section3Ref} section4Ref={section4Ref} section5Ref={section5Ref} />
-                    <div className={"h-16 w-16 flex justify-center items-center"} onClick={toggleDiv1}>
+                    <div className={"h-16 w-16 flex justify-center items-center "} onClick={toggleDiv1}>
                         <img src={cross} alt="" className={'h-8'}/>
                     </div>
                 </div>
@@ -124,10 +125,10 @@ const MainScreen = () => {
 
             )}
 
-            <div className="logo-res-full w-full custom-height-15vh flex ">
-                <div className="logo-res  custom-width-20  h-full flex justify-center items-start">
-                    <div className="logo w-5/6 h-3/6  flex justify-center items-center ">
-                        <img src={logoIcon} alt="Logo"/>
+            <div className="logo-res-full main-color w-full custom-height-22vh flex items-center">
+                <div className="logo-res  custom-width-20  h-full flex justify-center items-center">
+                    <div className="logo w-5/6 h-3/6   flex justify-center items-center ">
+                        <img src={logoIcon} alt="Logo" className={"h-[80%]"}/>
                     </div>
                 </div>
                 <div className="logo-res1 custom-width-75 h-full "></div>
@@ -136,14 +137,14 @@ const MainScreen = () => {
             {/*mid section height*/}
 
             <div
-                className="custom-height-63vh ai-dev-area-height-res main-color  w-full flex justify-center items-center">
+                className="custom-height-63vh   ai-dev-area-height-res main-color  w-full flex justify-center items-center">
                 <div className="custom-width-25 add-button-res  h-full flex justify-center items-center">
                     <div className=" w-1/5 h-1/5 flex justify-center items-center">
                         <img src={addIcon} alt="Add Icon"/>
                     </div>
                 </div>
                 <div
-                    className="ai-dev-div-main-res uppercase w-[65%]  h-full flex flex-col justify-between items-center">
+                    className="ai-dev-div-main-res uppercase  w-[65%]  h-full flex flex-col justify-between items-center">
                     <p className="ai-dev-media Ai-dev-p"
                        style={{whiteSpace: 'nowrap'}}>
                         AI Dev pioneers decentralized [
@@ -194,7 +195,7 @@ const MainScreen = () => {
         <span className="font-bold green-text">
             Craft websites, Deploy smart contracts, Predict Prices
         </span>
-        <span className="pl-2 font-bold">AND</span>
+        <span className="pl-2  and-black-text">AND</span>
         <span className="pl-2 font-bold">
             Snipe trades
         </span>
@@ -211,7 +212,7 @@ const MainScreen = () => {
                     </div>
                 </div>
             </div>
-            <div className="bottom-bar main-color bottom-bar-res  w-full custom-height-15vh flex">
+            <div className="bottom-bar  main-color bottom-bar-res  w-full custom-height-15vh flex">
                 <div className="custom-width-15 h-full flex justify-center items-center">
                     <div className="w-1/5 h-1/5 flex justify-center items-center">
                         {/* Optionally include any content here */}
@@ -305,7 +306,7 @@ const MainScreen = () => {
 
             {/* Test carousel section */}
             <div
-                className="owl-section w-full custom-height-px-600   flex justify-center items-center overflow-x-hidden">
+                className="owl-section w-full custom-height-px-600  main-color flex justify-center items-center overflow-x-hidden">
                 <div className="owl-section-width-res w-9/12 h-full flex justify-center items-center" ref={section1Ref}>
                     <Test/>
                 </div>
@@ -313,10 +314,10 @@ const MainScreen = () => {
 
 
             <div
-                className={"marquee-text-area custom-height-70 bg-gray-500 w-full mai flex flex-col justify-center items-center"}>
+                className={"marquee-text-area-upper custom-height-70  w-full main-color flex flex-col justify-center items-center"}>
 
                 <marquee className="custom-marquee" behavior="scroll" width="100%" direction="left" height="250px"
-                         scrollamount="15">
+                         scrollamount="8">
                     <h1 style={{display: "inline-block", marginRight: "50px"}}> Website AI x Sniper AI x Token Deployer
                         x AI face Swap x Voice
                         AI x
@@ -327,7 +328,7 @@ const MainScreen = () => {
                         MEME Generator x Uncensored AI</h2>
                 </marquee>
                 <marquee className="custom-marquee" behavior="scroll" width="100%" direction="right" height="   250px"
-                         scrollamount="15">
+                         scrollamount="8">
                     <h2 style={{display: "inline-block", marginRight: "50px"}}> Website AI x Sniper AI x Token Deployer
                         x AI face Swap x Voice
                         AI x
@@ -356,18 +357,18 @@ const MainScreen = () => {
 
             </div>
             <div
-                className={"tier-section-height-res light-grey-color-bg h-auto  w-full bg-gray-800 py-10 flex justify-center items-center"}>
+                className={"tier-section-height-res grey-color-bg h-auto  w-full bg-gray-800 py-10 flex justify-center items-center"}>
                 <TierSection/>
             </div>
 
             <div
-                className={"lower-tier-section-res light-grey-color-bg h-36 w-full bg-gray-800 flex justify-center items-center"}>
+                className={"lower-tier-section-res grey-color-bg h-36 w-full bg-gray-800 flex justify-center items-center"}>
                 <LowerTierSection/>
             </div>
-            <div className={"roadmap-height-res light-black-color-bg custom-height-px-700  w-full px-3 bg-gray-500"}>
+            <div className={"roadmap-height-res grey-color-bg custom-height-px-700  w-full px-3 bg-gray-500"}>
                 <RoadmapSlider/>
             </div>
-            <div className={"tokonomics-height-res custom-height-90 w-full light-black-color-bg"}>
+            <div className={"tokonomics-height-res custom-height-90 w-full grey-color-bg"}>
 
                 <Tokonomics/>
 
@@ -375,14 +376,14 @@ const MainScreen = () => {
             <div className={"research-and-development-res main-color custom-height-px-1100 w-full bg-gray-400"}>
                 <ResearchAndDevelopment/>
             </div>
-            <div className={"custom-height-px-700 main-color animated-button-height-res w-full bg-white "}
+            <div className={"custom-height-px-600 main-color animated-button-height-res w-full bg-white "}
                  ref={section4Ref}>
                 <AnimatedButton/>
 
             </div>
             <div className={"trade-height-res main-color h-screen bg-gray-400 h-screen "} ref={section5Ref}>
 
-                <Trade/>
+                <Trade sectiontopRef={sectiontopRef}/>
             </div>
 
 

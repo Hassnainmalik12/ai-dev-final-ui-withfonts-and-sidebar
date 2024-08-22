@@ -12,17 +12,20 @@ body{
   color: #2ecc71;
 }
 .main-color{
-  background: #dadee0;
+  background: #e6e6e6;
 
 }
 .grey-color-bg{
-  background: #212121;
+  background: #1f1f1f;
 }
 .light-grey-color-bg{
   background: #333333;
 }
 .light-black-color-bg{
   background: #282828;
+}
+.tier-section-main{
+  //background-image: ;
 }
 .main {
   background: #dadee0;
@@ -39,11 +42,11 @@ body{
     }
 
   }
-  .owl-section{
-    background: #dadee0;
+  .and-black-text{
+    color: black;
   }
 
-  .marquee-text-area{
+  .marquee-text-area-upper{
     .custom-marquee{
       h1{
         font-size: 190px;
@@ -93,6 +96,9 @@ body{
 }
 .custom-height-25vh {
   height: 25vh;
+}
+.custom-height-22vh {
+  height: 22vh;
 }
 
 .custom-height-40 {
@@ -432,6 +438,15 @@ body{
   .logo-res{
     width: 100%;
   }
+  .logo-res-full{
+    height: 23vh;
+  }
+  .logo{
+    img{
+      height: 80%;
+    }
+  }
+
   .logo-res1{
     width: 0;
   }
@@ -461,29 +476,39 @@ body{
 
   .Ai-dev-p {
     white-space: normal; /* Allow text to wrap */
-    font-size: 11px !important; /* Adjust font size for smaller screens */
+    font-size: 13px !important; /* Adjust font size for smaller screens */
   }
 
   .ai-span {
-    font-size: 11px; /* Adjust font size for smaller screens */
+    font-size: 13px; /* Adjust font size for smaller screens */
   }
 
   .text-container1 {
+    width: 100%;
+    padding: 0 20px;
     margin-top: 30px;
     flex-direction: column; /* Stack items vertically on smaller screens */
     align-items: center;
-    font-size: 9px !important;
+    font-size: 11px !important;
     span{
-      font-size: 9px;
+      font-size: 10.3px;
+      padding-left:  5px;
+      //padding-right:  10px;
     }
     p{
-      font-size:9px !important;
+      //padding: 0 20px;
+      font-size:11px !important;
     }
   }
 
   .line-break {
     display: none; /* Hide the line break on small screens */
   }
+  //.main{
+  //  .custom-height-7vh{
+  //    height: 20vh;
+  //  }
+  //}
 
   .additional-text {
     display: block; /* Ensure the additional text is on a new line */
@@ -519,14 +544,17 @@ body{
     width: 0;
   }
   .ai-mid-text{
-    width: 80%;
+    width: 100%;
     p{
-      font-size: 16px;
+      font-size: 20px !important;
+    }
+    span{
+      font-size: 22px !important;
     }
   }
   .ai-text-left-res{
-    width: 20%;
- margin-top: 20px;
+    width: 0;
+ //margin-top: 20px;
   }
 
 
@@ -535,12 +563,39 @@ body{
 
   }
   .mid-ai-text-area-res{
-    height: 60vh;
+    height: 90vh;
   }
   .inverted-border{
     height: 60vh;
   }
+  .marquee-text-area-upper{
+    height: 45vh;
+    .custom-marquee{
+      height: 80px;
+      h1{
+        font-size: 50px !important;
+        font-family: "Anton", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        color: white;
+        letter-spacing: 3px;
+      }
+      h2{
+        font-size: 50px !important;
+        -webkit-text-stroke-width: 5px ;
+        -webkit-text-stroke-color: white;
+        font-family: monospace;
+        font-weight: 400;
+        font-style: normal;
+        color: transparent;
+        letter-spacing: 3px;
+      }
 
+
+
+
+    }
+  }
 
 }
 

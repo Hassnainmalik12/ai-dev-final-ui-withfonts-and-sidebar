@@ -7,7 +7,10 @@ import social3 from '../../../images/social-03.png';
 import social4 from '../../../images/social-04.png';
 import social5 from '../../../images/social-05.png';
 import social6 from '../../../images/social-06.png';
-const Trade = () => {
+const Trade = ({ sectiontopRef}) => {
+    const scrollToSection = (ref) => {
+        ref.current.scrollIntoView({ behavior: 'smooth' });
+    };
     return (
         <div className={" h-full w-full py-5"}>
             {/*first part marquee*/}
@@ -24,8 +27,8 @@ const Trade = () => {
                             MEME Generator x Uncensored AI</h1>
                     </marquee>
 
-                    <img src={arrow} alt="" className={"rotating-image absolute h-[60%] w-auto top-[45px]"}
-                         style={{height: "400px", mixBlendMode: 'multiply'}}/>
+                    <img src={arrow} alt="" className={"rotating-image absolute h-[60%] w-auto top-[80px]"}
+                         style={{height: "400px", mixBlendMode: 'multiply'}} onClick={() => scrollToSection(sectiontopRef)}/>
 
                     <marquee className={"custom-marquee"} width="100%" direction="right" height="225px"
                              scrollamount="20">
@@ -86,7 +89,7 @@ const Trade = () => {
                         </div>
                     </div>
                 </div>
-                <div className={"h-[40%] w-full px-5"}>
+                <div className={"h-[40%] w-full px-5 main-color"}>
                     <h1 className={"copyright-text pt-4 text-2xl"}>© DEV AI 2024</h1>
                 </div>
             </div>

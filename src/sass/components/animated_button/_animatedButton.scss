@@ -1,4 +1,8 @@
+@import "../../values/fonts";
+
+
 .animated-button {
+  width: 200px;
   padding: 10px 20px;
   color: white;
   cursor: pointer;
@@ -12,7 +16,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 5px;
+  gap: 15px;
 }
 
 .animated-button::before {
@@ -46,7 +50,9 @@
 }
 .lets-connect{
   h1{
-    font-size: 60px;
+    @include font_Gridular_Regular;
+    font-weight: bold;
+    font-size: 110px;
 
   }
 }
