@@ -18,12 +18,12 @@
 }
 
 .rotating-image {
-  transform: rotate(-35deg); /* Initial rotation */
+  //transform: rotate(-5deg); /* Initial rotation */
   transition: transform 0.4s ease; /* Smooth transition */
 }
 
 .rotating-image:hover {
-  transform: rotate(-90deg); /* Rotate to 90 degrees on hover */
+  transform: rotate(-45deg); /* Rotate to 90 degrees on hover */
 }
 .trade-last-contact{
   h1{

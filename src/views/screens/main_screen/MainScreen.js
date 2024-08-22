@@ -176,12 +176,12 @@ const MainScreen = () => {
 
                         className="ai-dev-main-title custom-height-70 w-full flex flex-col justify-center items-center">
                         <div
-                            className={"ai-dev-div w-full h-[100%] gap-10 flex-col flex justify-center items-center"}>
+                            className={"ai-dev-div w-full h-[100%]  flex-col flex justify-center items-center"}>
                             <p className="Ai-dev-text">
                                 <span>A</span>
                                 <span>I</span>
                             </p>
-                            <p className="Ai-dev-text">
+                            <p className="Ai-dev-text" >
                                 <span>D</span>
                                 <span>E</span>
                                 <span>V</span>
@@ -227,34 +227,84 @@ const MainScreen = () => {
                                     <img src={splashGif} alt="Splash"/>
                                 </div>
                             </div>
+
                             <div
                                 className="nav-text-div h-full flex justify-center items-center px-2 hover:cursor-pointer"
                                 onClick={() => scrollToSection(section1Ref)}>
                                 <p className="nav-text text-white uppercase">01. explore</p>
+                                <div className="hover-content p-2 flex flex-col items-center justify-between ">
+
+                                    <h1 className={"text-white uppercase  mt-2" }>explore 1</h1>
+                                    <h1 className={"text-white uppercase text-center" }>explore 1</h1>
+                                    <h1 className={"text-white uppercase text-center " }>explore 1</h1>
+                                    <h1 className={"text-white uppercase text-center" }>explore 1</h1>
+                                    <h1 className={"text-white uppercase text-center" }>explore 1</h1>
+                                </div>
+                                {/* Hover content div */}
                             </div>
+
                             <p className="nav-text text-white uppercase">-</p>
+
                             <div
                                 className="nav-text-div h-full flex justify-center items-center px-2 hover:cursor-pointer"
                                 onClick={() => scrollToSection(section2Ref)}>
                                 <p className="nav-text text-white uppercase">02. ai bots</p>
+                                <div className="hover-content p-2 flex flex-col items-center justify-between ">
+
+                                    <h1 className={"text-white uppercase  mt-2"}>explore 1</h1>
+                                    <h1 className={"text-white uppercase text-center"}>explore 1</h1>
+                                    <h1 className={"text-white uppercase text-center "}>explore 1</h1>
+                                    <h1 className={"text-white uppercase text-center"}>explore 1</h1>
+                                    <h1 className={"text-white uppercase text-center"}>explore 1</h1>
+                                </div>
                             </div>
+
                             <p className="nav-text text-white uppercase">-</p>
+
                             <div
                                 className="nav-text-div h-full flex justify-center items-center px-2 hover:cursor-pointer"
                                 onClick={() => scrollToSection(section3Ref)}>
                                 <p className="nav-text text-white uppercase">03. docs</p>
+                                <div className="hover-content p-2 flex flex-col items-center justify-between ">
+
+                                    <h1 className={"text-white uppercase  mt-2"}>explore 1</h1>
+                                    <h1 className={"text-white uppercase text-center"}>explore 1</h1>
+                                    <h1 className={"text-white uppercase text-center "}>explore 1</h1>
+                                    <h1 className={"text-white uppercase text-center"}>explore 1</h1>
+                                    <h1 className={"text-white uppercase text-center"}>explore 1</h1>
+                                </div>
                             </div>
+
                             <p className="nav-text text-white uppercase">-</p>
+
                             <div
                                 className="nav-text-div h-full flex justify-center items-center px-2 hover:cursor-pointer"
                                 onClick={() => scrollToSection(section4Ref)}>
                                 <p className="nav-text text-white uppercase">04. connect</p>
+                                <div className="hover-content p-2 flex flex-col items-center justify-between ">
+
+                                    <h1 className={"text-white uppercase  mt-2"}>explore 1</h1>
+                                    <h1 className={"text-white uppercase text-center"}>explore 1</h1>
+                                    <h1 className={"text-white uppercase text-center "}>explore 1</h1>
+                                    <h1 className={"text-white uppercase text-center"}>explore 1</h1>
+                                    <h1 className={"text-white uppercase text-center"}>explore 1</h1>
+                                </div>
                             </div>
+
                             <p className="nav-text text-white uppercase">-</p>
+
                             <div
                                 className="nav-text-div h-full flex justify-center items-center px-2 hover:cursor-pointer"
                                 onClick={() => scrollToSection(section5Ref)}>
                                 <p className="nav-text text-white uppercase">05. trade</p>
+                                <div className="hover-content p-2 flex flex-col items-center justify-between ">
+
+                                    <h1 className={"text-white uppercase  mt-2"}>explore 1</h1>
+                                    <h1 className={"text-white uppercase text-center"}>explore 1</h1>
+                                    <h1 className={"text-white uppercase text-center "}>explore 1</h1>
+                                    <h1 className={"text-white uppercase text-center"}>explore 1</h1>
+                                    <h1 className={"text-white uppercase text-center"}>explore 1</h1>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -279,7 +329,7 @@ const MainScreen = () => {
 
             {/* Mid AI text */}
             <div
-                className="mid-ai-text-area main-color mid-ai-text-area-res w-full flex custom-height-60vh justify-center items-center ">
+                className="mid-ai-text-area main-color mid-ai-text-area-res w-full flex custom-height-50vh justify-center items-center ">
                 <div
                     className="ai-text-left ai-text-left-res flex  px-10 bg justify-end items-start custom-width-25   h-full">
                     <div className="w-12 h-48 arrow-res  flex items-start justify-end ">
@@ -306,7 +356,7 @@ const MainScreen = () => {
 
             {/* Test carousel section */}
             <div
-                className="owl-section w-full custom-height-px-600  main-color flex justify-center items-center overflow-x-hidden">
+                className="owl-section w-full custom-height-px-800  main-color flex justify-center items-center overflow-x-hidden">
                 <div className="owl-section-width-res w-9/12 h-full flex justify-center items-center" ref={section1Ref}>
                     <Test/>
                 </div>
@@ -376,7 +426,7 @@ const MainScreen = () => {
             <div className={"research-and-development-res main-color custom-height-px-1100 w-full bg-gray-400"}>
                 <ResearchAndDevelopment/>
             </div>
-            <div className={"custom-height-px-600 main-color animated-button-height-res w-full bg-white "}
+            <div className={"custom-height-px-500 main-color animated-button-height-res w-full  "}
                  ref={section4Ref}>
                 <AnimatedButton/>
 

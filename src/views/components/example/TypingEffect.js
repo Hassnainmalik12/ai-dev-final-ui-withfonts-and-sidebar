@@ -62,7 +62,7 @@ const TypingEffect = ({ text = '' }) => {
 
     return (
         <div style={{ position: 'relative', display: 'inline-block', whiteSpace: 'pre-wrap', wordWrap: 'break-word' }}>
-            <span ref={textRef} className={"custom-font"} style={{ color: textColor, fontSize: '2em'}}>{displayedText}</span> {/* Adjust font size */}
+            <span ref={textRef} className={"custom-font"} style={{ color: textColor, fontSize: '64px', lineHeight:'64px'}}>{displayedText}</span> {/* Adjust font size */}
             <span
                 ref={cursorRef}
                 style={{

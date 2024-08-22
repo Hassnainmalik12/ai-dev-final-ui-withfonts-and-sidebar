@@ -16,7 +16,7 @@ const DevBotGifSection = () => {
 
                     <p className={"gallery-para uppercase"}>Live Bots:Experience our [  <strong className={"text-green-500"}> AI bots</strong>  ] to
                         elevate your skills</p>
-                    <h1 className={"gallery-heading"}>THE ECOSYSTEM</h1>
+                    <h1 className={"gallery-heading mt-2"}>THE ECOSYSTEM</h1>
                     <h1 className={"gallery-heading1"}>BEHIND AI DEV</h1>
 
                 </div>

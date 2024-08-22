@@ -110,6 +110,9 @@ body{
 .custom-height-60 {
   height: 60%;
 }
+.custom-height-50vh {
+  height: 50vh;
+}
 .custom-height-60vh {
   height: 60vh;
 }
@@ -171,6 +174,25 @@ body{
   width: 85%;
 }
 
+.nav-text-div:hover .hover-content {
+  display: block;
+}
+
+.hover-content {
+  display: none;
+  position: absolute;
+  bottom: 100%;
+  width: 15%;
+  height: 300px;
+  background-color: #333;
+  border-radius: 10px;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+.nav-text-div:hover .hover-content {
+  display: flex;
+  opacity: 1;
+}
 .custom-font{
   @include font_Gridular_Regular;
 }
@@ -205,11 +227,14 @@ body{
 
 .Ai-dev-text {
   @include font_Gridular_Regular;
-  font-size: 190px;
-  font-weight: bold;}
+  font-size: 240px;
+  font-weight: bold;
+  line-height: 1.25;
+}
 
 .Ai-dev-p {
-  font-size: 20px;
+  font-size: 16px;
+  color: #414141;
   span{
     color: #2ecc71;
   }
@@ -246,6 +271,9 @@ body{
   z-index: 1000; /* A high value to make sure it's above other elements */
 }
 
+.custom-height-px-500{
+  height:500px;
+}
 .custom-height-px-600{
   height:600px;
 }

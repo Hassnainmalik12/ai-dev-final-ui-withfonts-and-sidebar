@@ -12,7 +12,7 @@ const BelowGallerySection = () => {
                         <h1 className={"main-heading main-heading-res uppercase  mt-8"}>AI DEV Custom Bot Solutions,</h1>
                         <h1 className={"main-heading-green-text "}>Tailored to You</h1>
                     </div>
-                    <h1 className={"below-gallery-desc-section "}>At AI DEV, we excel in providing a wide array of
+                    <h1 className={"below-gallery-desc-section mt-2"}>At AI DEV, we excel in providing a wide array of
                         AI-driven Bot and Assistant solutions, designed
                         to cater to the unique demands of various industry verticals.</h1>
                 </div>

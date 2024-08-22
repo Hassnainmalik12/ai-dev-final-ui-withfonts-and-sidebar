@@ -1,18 +1,24 @@
+@import "../values/fonts";
+
 .gallery-para{
   font-size: 1em;
   color: white;
 
 }
 .gallery-heading{
-  font-size: 70px;
+  @include font_Gridular_Regular;
+  font-size: 112px;
   color: white;
-  //margin-top: -10px;
+  font-weight: bold;
+  line-height: 0.9;
 
 }
 .gallery-heading1{
-  font-size: 70px;
+  @include font_Gridular_Regular;
+  font-size: 112px;
   color: white;
-  margin-top: -30px;
+  line-height: 0.9;
+  font-weight: bold;
 }
 
 @media (max-width: 600px) {

@@ -83,7 +83,7 @@ const Card = ({ card }) => {
                                 </h1>
                             </div>
                         </div>
-                        <div className="h-16 w-2/3">
+                        <div className="h-16 w-2/3 mt-10">
                             <div className="buttons h-full w-full py-1 flex gap-5 justify-start">
                                 <button className="px-4 rounded-full">Launch</button>
                                 <button className="px-5 rounded-full">Docs</button>

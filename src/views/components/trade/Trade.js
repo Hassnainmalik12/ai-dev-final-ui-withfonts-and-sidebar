@@ -27,8 +27,27 @@ const Trade = ({ sectiontopRef}) => {
                             MEME Generator x Uncensored AI</h1>
                     </marquee>
 
-                    <img src={arrow} alt="" className={"rotating-image absolute h-[60%] w-auto top-[80px]"}
-                         style={{height: "400px", mixBlendMode: 'multiply'}} onClick={() => scrollToSection(sectiontopRef)}/>
+
+                    <svg width="201" height="201" viewBox="0 0 201 201" fill="none" xmlns="http://www.w3.org/2000/svg"
+                         className={"rotating-image absolute hover:cursor-pointer"}
+                         onClick={() => scrollToSection(sectiontopRef)}>
+                        <rect width="175.728" height="30.8537" transform="matrix(-1 0 0 1 200.009 1.12775)"
+                              fill="#1F1F1F"></rect>
+                        <rect width="175.728" height="30.8537" transform="matrix(-1 0 0 1 200.009 1.12775)"
+                              fill="#1F1F1F"></rect>
+                        <path d="M169.169 1.12775L169.169 176.856L200.024 176.856L200.024 1.12775L169.169 1.12775Z"
+                              fill="#1F1F1F"></path>
+                        <path d="M169.169 1.12775L169.169 176.856L200.024 176.856L200.024 1.12775L169.169 1.12775Z"
+                              fill="#1F1F1F"></path>
+                        <rect x="0.0132751" y="179.115" width="251.903" height="30.9395"
+                              transform="rotate(-45 0.0132751 179.115)" fill="#1F1F1F"></rect>
+                        <rect x="0.0132751" y="179.115" width="251.903" height="30.9395"
+                              transform="rotate(-45 0.0132751 179.115)" fill="#1F1F1F"></rect>
+                    </svg>
+
+                    {/*<img src={arrow} alt="" className={"rotating-image absolute h-[60%] w-auto top-[80px]"}*/}
+                    {/*     style={{height: "400px", mixBlendMode: 'multiply'}}*/}
+                    {/*     onClick={() => scrollToSection(sectiontopRef)}/>*/}
 
                     <marquee className={"custom-marquee"} width="100%" direction="right" height="225px"
                              scrollamount="20">

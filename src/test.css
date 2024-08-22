@@ -1,16 +1,9 @@
-/* Add to your test.css */
-/*.custom-slide {*/
-/*    width: 800px; !* Set desired width *!*/
-/*    height: 200px; !* Set desired height *!*/
-/*    box-sizing: border-box; !* Ensure padding and borders are included in width/height *!*/
-/*}*/
 
-/* Optional: Adjust slider settings */
 .slick-slide {
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 550px; /* Adjust to your needs */
+    height: 750px;
     box-sizing: border-box;
     gap: 10px;
 
@@ -20,15 +13,15 @@
 /* Ensure no conflicting styles */
 .slick-slide .custom-slide {
     width: 200px;
-    height: 550px;
+    height: 750px;
 }
 .custom-slide {
     width: 200px; /* Adjust to your needs */
-    height: 550px;
+    height: 750px;
 
     .custom-slide-inner{
         .custom-slide-number{
-            font-size: 150px;
+            font-size: 15rem;
             color: black;
             border-bottom: 2px solid black;
         }
@@ -41,7 +34,8 @@
 
         }
         .custom-slide-para{
-            font-size: 18px;
+            font-size: 20px;
+            line-height: 1.5;
         }
     }
 }
