@@ -67,8 +67,8 @@ const TypingEffect = ({ text = '' }) => {
                 ref={cursorRef}
                 style={{
                     color: textColor === 'white' ? '#2ecc71' : 'white',
-                    fontSize: '2em',
-                    verticalAlign: 'top',
+                    fontSize: '2.5em',
+                    verticalAlign: 'baseline',
                     animation: 'blink 1s step-start infinite',
                 }}
             >

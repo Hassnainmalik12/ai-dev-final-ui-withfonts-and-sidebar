@@ -11,7 +11,7 @@ import image8 from '../../images/Ai Dev Bot Face Swap.gif';
 import image9 from '../../images/Ai Dev Bot Voice AI.gif';
 import image10 from '../../images/Ai Dev Bot Random.gif';
 import image11 from '../../images/Ai Dev Bot Rocket.gif';
-import TypingEffect from "../components/example/TypingEffect";
+import TypingEffect from "../components/typing-effect/TypingEffect";
 
 const Example = () => {
     return (
