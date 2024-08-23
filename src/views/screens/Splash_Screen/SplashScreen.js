@@ -11,24 +11,24 @@ const SplashScreen = () => {
     useEffect(() => {
         const firstTimer = setTimeout(() => {
             setText('Ai dev is coming..');
-        }, 700);
+        }, 500);
 
         const secondTimer = setTimeout(() => {
             setText('Ai dev is coming...');
-        }, 1400);
+        }, 1000);
         const thirdTimer = setTimeout(() => {
             setText('Ai dev is coming...');
-        }, 2100);
+        }, 1500);
         const fourthTimer = setTimeout(() => {
             setText('Ai dev is coming....');
-        }, 2800);
+        }, 2100);
         const animateTimer = setTimeout(() => {
             setAnimate(true);
 
-        }, 3000);
+        }, 2100);
         const navigateTimer = setTimeout(() => {
             setLoaded(true);
-        }, 3500);
+        }, 2800);
 
         return () => {
             clearTimeout(firstTimer);

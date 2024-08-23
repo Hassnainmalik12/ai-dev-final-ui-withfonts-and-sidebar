@@ -19,7 +19,7 @@ const Trade = ({ sectiontopRef}) => {
                 <div className={"marquee-text-area w-full flex flex-col justify-center items-center relative"}>
 
                     <marquee className={"custom-marquee"} width="100%" direction="left" height="225px"
-                             scrollamount="20">
+                             scrollamount="13">
                         <h1> Website AI x Sniper AI x Token
                             Deployer
                             x AI face Swap x Voice
@@ -50,7 +50,7 @@ const Trade = ({ sectiontopRef}) => {
                     {/*     onClick={() => scrollToSection(sectiontopRef)}/>*/}
 
                     <marquee className={"custom-marquee"} width="100%" direction="right" height="225px"
-                             scrollamount="20">
+                             scrollamount="13">
                         <h1> Website AI x Sniper AI x Token
                             Deployer
                             x AI face Swap x Voice

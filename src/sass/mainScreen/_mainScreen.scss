@@ -8,8 +8,13 @@ body{
   overflow-x: hidden;
   overflow-y: auto;
 }
-.text-green{
+.text-green-navbar{
   color: #2ecc71;
+  border-left: 3px solid #2ecc71;
+}
+.navbar-inner-border{
+  border: 2px solid white;
+  border-radius: 10px;
 }
 .main-color{
 
@@ -69,10 +74,6 @@ background-size: 100%;
         color: transparent;
         letter-spacing: 3px;
       }
-
-
-
-
     }
   }
 
@@ -461,6 +462,13 @@ background-size: 100%;
 //=======================
 
 @media (min-width: 320px) and (max-width: 599px) {
+  .main-color{
+
+    //background-image: url("./images/background.png");
+    background-size: 100%;
+    background: #e6e6e6;
+
+  }
   .hidden{
     display: flex;
     align-items: center;
@@ -621,10 +629,6 @@ background-size: 100%;
         color: transparent;
         letter-spacing: 3px;
       }
-
-
-
-
     }
   }
 
@@ -646,6 +650,33 @@ background-size: 100%;
   justify-content:center;
   align-items: center;
 }
+
+  .marquee-text-area-upper{
+    height: 45vh;
+    .custom-marquee{
+      height: 130px;
+      h1{
+        font-size: 100px !important;
+        font-family: "Anton", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        color: white;
+        letter-spacing: 3px;
+      }
+      h2{
+        font-size: 100px !important;
+        -webkit-text-stroke-width: 5px ;
+        -webkit-text-stroke-color: white;
+        font-family: monospace;
+        font-weight: 400;
+        font-style: normal;
+        color: transparent;
+        letter-spacing: 3px;
+      }
+
+    }
+  }
+
   .logo-res{
     width: 100%;
     display: flex;

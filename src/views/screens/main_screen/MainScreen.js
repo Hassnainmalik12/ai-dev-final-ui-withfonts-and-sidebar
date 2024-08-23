@@ -379,7 +379,6 @@ const MainScreen = () => {
                 </marquee>
                 <marquee className="custom-marquee" behavior="scroll" width="100%" direction="right" height="   250px"
                          scrollamount="13">
-                         scrollamount="13">
                     <h2 style={{display: "inline-block", marginRight: "50px"}}> Website AI x Sniper AI x Token Deployer
                         x AI face Swap x Voice
                         AI x
