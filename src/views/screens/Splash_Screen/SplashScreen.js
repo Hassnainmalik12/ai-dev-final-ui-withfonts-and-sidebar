@@ -1,11 +1,12 @@
 import React, { useState, useEffect } from 'react';
 import { navigateToScreen } from "../../../utils/nav_controller";
 import { SCREEN } from "../../../models/constants/screen";
-// import '../../../splash.css';
 import splashGif from '../../../images/preloader.gif';
 
 const SplashScreen = () => {
     const [text, setText] = useState('Ai dev is coming.');
+    const [animate, setAnimate] = useState(false);
+    const [loaded, setLoaded] = useState(false);
 
     useEffect(() => {
         const firstTimer = setTimeout(() => {
@@ -21,8 +22,12 @@ const SplashScreen = () => {
         const fourthTimer = setTimeout(() => {
             setText('Ai dev is coming....');
         }, 2800);
-     const navigateTimer = setTimeout(() => {
-            navigateToScreen(SCREEN.MAIN)
+        const animateTimer = setTimeout(() => {
+            setAnimate(true);
+
+        }, 3000);
+        const navigateTimer = setTimeout(() => {
+            setLoaded(true);
         }, 3500);
 
         return () => {
@@ -30,12 +35,19 @@ const SplashScreen = () => {
             clearTimeout(secondTimer);
             clearTimeout(thirdTimer);
             clearTimeout(fourthTimer);
+            clearTimeout(animateTimer);
             clearTimeout(navigateTimer);
         };
     }, []);
 
+    useEffect(() => {
+        if (loaded) {
+            navigateToScreen(SCREEN.MAIN);
+        }
+    }, [loaded]);
+
     return (
-        <div className="splash" onClick={event => navigateToScreen(SCREEN.APP)}>
+        <div className={`splash ${animate ? 'animate-up' : ''}`} onClick={event => navigateToScreen(SCREEN.APP)}>
             <div className="center-box">
                 <div className="splash-gif">
                     <img src={splashGif} alt="splash gif" />
