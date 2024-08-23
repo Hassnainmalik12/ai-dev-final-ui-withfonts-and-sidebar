@@ -56,7 +56,7 @@ const LogoSlider = () => {
                 }
             }
         ],
-        customSlideClass: "logo-slider-slide" // Renamed custom class for slides
+        customSlideClass: "logo_slider-slide" // Renamed custom class for slides
     };
 
     return (

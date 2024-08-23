@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { navigateToScreen } from "../../../utils/nav_controller";
 import { SCREEN } from "../../../models/constants/screen";
 import splashGif from '../../../images/preloader.gif';
+import animatedImage from '../../../images/arrow.png'; // Replace with your image path
 
 const SplashScreen = () => {
     const [text, setText] = useState('Ai dev is coming.');
@@ -16,19 +17,22 @@ const SplashScreen = () => {
         const secondTimer = setTimeout(() => {
             setText('Ai dev is coming...');
         }, 1000);
+
         const thirdTimer = setTimeout(() => {
             setText('Ai dev is coming...');
         }, 1500);
+
         const fourthTimer = setTimeout(() => {
             setText('Ai dev is coming....');
         }, 2100);
+
         const animateTimer = setTimeout(() => {
             setAnimate(true);
-
         }, 2100);
+
         const navigateTimer = setTimeout(() => {
             setLoaded(true);
-        }, 2800);
+        }, 2700);
 
         return () => {
             clearTimeout(firstTimer);
@@ -48,15 +52,21 @@ const SplashScreen = () => {
 
     return (
         <div className={`splash ${animate ? 'animate-up' : ''}`} onClick={event => navigateToScreen(SCREEN.APP)}>
-            <div className="center-box">
-                <div className="splash-gif">
-                    <img src={splashGif} alt="splash gif" />
+            {!animate ? (
+                <div className="center-box">
+                    <div className="splash-gif">
+                        <img src={splashGif} alt="splash gif" />
+                    </div>
+                    <div className="splash-bar">
+                        <div className="splash-bar-inner"></div>
+                        <p>{text}</p>
+                    </div>
                 </div>
-                <div className="splash-bar">
-                    <div className="splash-bar-inner"></div>
-                    <p>{text}</p>
+            ) : (
+                <div className="animated-image">
+                    <img src={animatedImage} alt="Animated" />
                 </div>
-            </div>
+            )}
         </div>
     );
 };

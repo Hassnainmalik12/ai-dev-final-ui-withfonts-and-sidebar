@@ -2,7 +2,7 @@ import React from 'react';
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import '../../test.css'; // Import custom CSS for the arrows
+// import '../../test.css'; // Import custom CSS for the arrows
 
 const Test = () => {
     console.log("a gya render")
