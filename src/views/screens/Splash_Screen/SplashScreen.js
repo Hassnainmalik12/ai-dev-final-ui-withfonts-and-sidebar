@@ -19,28 +19,24 @@ const SplashScreen = () => {
         }, 800);
 
         const thirdTimer = setTimeout(() => {
-            setText('Ai dev is coming ...');
+            setText('Ai dev is coming ....');
         }, 1200);
 
-        const fourthTimer = setTimeout(() => {
-            setText('Ai dev is coming ....');
-        }, 1600);
 
         const animateTimer = setTimeout(() => {
             setAnimate(true);
-        }, 1900);
+        }, 1300);
 
-        const navigateTimer = setTimeout(() => {
-            navigateToScreen(SCREEN.MAIN);
-        }, 2400);
+        // const navigateTimer = setTimeout(() => {
+        //     // navigateToScreen(SCREEN.MAIN);
+        // }, 2700);
 
         return () => {
             clearTimeout(firstTimer);
             clearTimeout(secondTimer);
             clearTimeout(thirdTimer);
-            clearTimeout(fourthTimer);
-            // clearTimeout(animateTimer);
-            clearTimeout(navigateTimer);
+            clearTimeout(animateTimer);
+            // clearTimeout(navigateTimer);
         };
     }, []);
 

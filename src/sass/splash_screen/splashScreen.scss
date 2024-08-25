@@ -16,11 +16,11 @@ html, body {
   display: flex;
   justify-content: center;
   align-items: center;
-  transition: transform 0.5s ease-in-out;
+  transition: transform 1.5s ease-in-out;
 }
 
 .animate-up {
-  transform: translateY(-130%);
+  transform: translateY(-145%);
 }
 
 .center-box {

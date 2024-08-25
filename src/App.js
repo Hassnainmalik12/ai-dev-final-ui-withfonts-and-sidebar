@@ -8,7 +8,7 @@ function App() {
     const url = new URL(window.location.href).searchParams
 
     if (!url.has('screen')) {
-        navigateToScreen(SCREEN.SPLASH)
+        navigateToScreen(SCREEN.MAIN)
         return;
     }
 

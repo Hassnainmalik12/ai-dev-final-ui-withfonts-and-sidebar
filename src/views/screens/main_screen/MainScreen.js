@@ -23,6 +23,7 @@ import AnimatedButton from "../../components/animated_button/AnimatedButton";
 import Trade from "../../components/trade/Trade";
 import ChatBot from "../../components/chatbot/ChatBot";
 import Sidebar from "../../components/sidebar/Sidebar";
+import SplashScreen from "../Splash_Screen/SplashScreen";
 
 
 const MainScreen = () => {
@@ -50,6 +51,8 @@ const MainScreen = () => {
     const section3Ref = useRef(null);
     const section4Ref = useRef(null);
     const section5Ref = useRef(null);
+    const [isSplashVisible, setIsSplashVisible] = useState(true);
+
     const scrollToSection = (ref) => {
         const targetPosition = ref.current.getBoundingClientRect().top + window.pageYOffset;
         const startPosition = window.pageYOffset;
@@ -100,7 +103,20 @@ const MainScreen = () => {
         };
     }, []);
 
+
+    useEffect(() => {
+        const timer = setTimeout(() => {
+            setIsSplashVisible(false);
+        }, 2110); // 3 seconds
+
+        return () => clearTimeout(timer);
+    }, []);
+
     return (
+        <>
+            {isSplashVisible ? (
+                <SplashScreen />
+            ) : (
         <div className="main w-screen h-screen" ref={sectiontopRef}>
             {/*burger button*/}
             <div
@@ -438,6 +454,8 @@ const MainScreen = () => {
 
 
         </div>
+            )}
+  </>
     );
 };
 
