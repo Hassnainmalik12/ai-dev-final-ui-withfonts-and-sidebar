@@ -47,7 +47,7 @@ const SplashScreen = () => {
     // }, [loaded]);
 
     return (
-        <div className={`splash ${animate ? 'animate-up' : ''}`} onClick={event => navigateToScreen(SCREEN.APP)}>
+        <div className={`splash ${animate ? 'animate-up' : ''}`}>
             {!animate ? (
                 <div className="center-box">
                     <div className="splash-gif">
