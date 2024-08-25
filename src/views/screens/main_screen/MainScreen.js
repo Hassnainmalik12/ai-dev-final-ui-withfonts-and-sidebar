@@ -111,7 +111,7 @@ const MainScreen = () => {
     useEffect(() => {
         const timer = setTimeout(() => {
             setIsSplashVisible(false);
-        }, 1830);
+        }, 1500);
 
         return () => clearTimeout(timer);
     }, []);
@@ -331,12 +331,12 @@ const MainScreen = () => {
                             </div>
                         </div>
                         <div className="custom-width-15 h-full flex justify-center items-center relative ">
-                            <div className="fixed w-2/6 h-2/6 z-10 flex justify-center items-center"
+                            <div className="fixed w-2/6 h-2/6 z-10 flex justify-center items-center hover:cursor-pointer"
                                  onClick={toggleDiv}>
                                 <img src={Chatbot} alt="Chatbot" className="chatbot-img h-max w-24"/>
                                 {isOpen && (
                                     <div
-                                        className="chatbot-div  toggle-div absolute bottom-full  mb-[calc(-19%)] text-white flex items-center justify-center"
+                                        className="chatbot-div  toggle-div absolute bottom-full  mb-[calc(-19%)] text-white flex items-center justify-center "
                                         style={{width: '900px', height: '500px'}}
                                         onClick={(e) => e.stopPropagation()}
                                     >

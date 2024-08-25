@@ -6,7 +6,7 @@ const ChatBot = () => {
     return (
         <div className={"chatbot-div-inside w-full h-full flex justify-center  items-center"}>
             <div className={"w-[60%] h-[90%]  flex justify-start"}>
-                <div className={"w-[70%] h-full inner bg-gray-800 rounded-xl p-1"}>
+                <div className={"w-[70%] h-full inner light-grey-color-bg rounded-xl p-1"}>
                     <div className={"h-[20%] w-full  flex justify-between items-center"}>
 
                         <div className={"w-[45%] h-[80%]  flex items-center justify-center gap-3"}>
@@ -25,17 +25,17 @@ const ChatBot = () => {
                     </div>
                     <div className={"h-[70%] w-full "}>
                         <div className={"h-16 w-full flex items-center justify-center px-3"}>
-                            <div className={"h-12 w-full flex items-center px-2 bg-gray-600 rounded-lg"}>
+                            <div className={"h-12 w-full flex items-center px-2 light-grey-color-bg-message rounded-lg"}>
                                 <p className={"text-white"}>Welcome! How can I assist you today?</p>
                             </div>
                         </div>
                     </div>
                     <div className={"h-[10%] w-full  flex justify-between px"}>
 
-                        <div className={"chatbot-input w-[80%] h-full bg-gray-400 flex  items-center"}>
-                            <input type="text" placeholder={"Enter a message..."}/>
+                        <div className={"chatbot-input w-[80%] h-full light-grey-color-bg-message flex  items-center"}>
+                            <input type="text" placeholder={"Type a message..."}/>
                         </div>
-                        <div className={"w-[20%] h-full bg-gray-500 flex  items-center justify-center"}>
+                        <div className={"w-[20%] h-full light-grey-color-bg-send-btn flex  items-center justify-center"}>
                             <p className={"text-lg"}>Send</p>
                         </div>
                     </div>
