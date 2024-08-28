@@ -106,12 +106,13 @@
 
 @media (min-width: 320px) and (max-width: 599px) {
   .below-gallery-section-height-res{
-    height: 250vh;
+    //margin-top: 20px;
+    height: 220vh;
+    //background: #1c64f2 !important;
   }
   .below-gallery-section-res{
     width: 100%;
-    height: 250vh;
-    //background-color: greenyellow;
+    height: 180vh;
   }
   .main-heading-res{
     font-size: 25px !important;
@@ -165,7 +166,11 @@
     height: 650px;
   }
   .logo-slider-res{
-    height: 200px;
+    height: 180px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    //background: red;
   }
 
 }

@@ -60,7 +60,7 @@ const LogoSlider = () => {
     };
 
     return (
-        <div className="logo-slider-container">
+        <div className="logo-slider-container ">
             <Slider {...settings} className="logo-slider px-5 flex gap-5">
                 <div className="logo-slider-slide  px-5">
                     <img src={a1} alt="Logo 1" className={"w-[90%] px-5 "}/>

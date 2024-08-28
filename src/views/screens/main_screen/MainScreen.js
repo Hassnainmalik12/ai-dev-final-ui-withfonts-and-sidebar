@@ -467,7 +467,7 @@ const MainScreen = () => {
                         <AnimatedButton/>
 
                     </div>
-                    <div className={"trade-height-res main-color h-screen bg-gray-400 h-screen "} ref={section5Ref}>
+                    <div className={"trade-height-res main-color h-screen h-screen "} ref={section5Ref}>
 
                         <Trade sectiontopRef={sectiontopRef}/>
                     </div>

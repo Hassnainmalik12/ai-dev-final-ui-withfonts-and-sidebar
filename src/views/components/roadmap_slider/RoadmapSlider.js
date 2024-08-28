@@ -105,6 +105,13 @@ const RoadmapSlider = () => {
                     slidesToShow: 1,
                     slidesToScroll: 1
                 }
+            },
+            {
+                breakpoint: 320,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1
+                }
             }
         ]
     };
@@ -115,9 +122,9 @@ const RoadmapSlider = () => {
     <div className="roadmap-slider-container px-7 flex flex-col">
 
 
-        <Slider {...settings} className="roadmap-slider flex justify-center items-center ">
+        <Slider {...settings} className="roadmap-slider  flex justify-center items-center ">
             <div className="roadmap-slider-slide ">
-                <div className={" roadmap-slider-card w-96 h-full bg-gray-800 card-radius px-7 flex flex-col py-2"}>
+                <div className={" roadmap-slider-card  w-96 h-full bg-gray-800 card-radius px-7 flex flex-col py-2"}>
                     <div className={"h-[15%] w-full   flex justify-between items-center px-3"}>
                         <div className={"h-1/2 w-[40%] "}>
                             <h1 className={"roadmap-phase-2-text uppercase text-white flex justify-center items-center h-full"}>phase
@@ -133,7 +140,7 @@ const RoadmapSlider = () => {
                     </div>
 
 
-                    <div className={"main-card h-[60%] w-full flex flex-col gap-2"}>
+                    <div className={"main-card h-[60%] w-full flex flex-col gap-1"}>
                         <div className={"w-full flex gap-1"}>
                             <div className={"h-8 w-8  flex justify-center items-center"}>
                                 <img src={checkPinkAvatar} alt="" className={"w-1/2"}/>

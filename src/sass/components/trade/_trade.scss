@@ -86,10 +86,16 @@
 }
 
 @media (min-width: 320px) and (max-width: 599px) {
-
+  .trade-height-res{
+    height: 75vh;
+  }
   .trade-marquee-area{
-    height: 50%;
-    background-color: #6b7280;
+    height: 40%;
+    //background: #1c64f2 !important;
+  }
+  .custom-font{
+    font-size: 30px !important;
+    line-height: 30px !important;
   }
   .marquee-text-area{
     height: 50vh;
@@ -142,6 +148,18 @@
   }
   .copyright-text{
     font-size: 20px;
+  }
+  .rotating-image{
+    height: 100px;
+    width: 100px;
+    top: 120px !important;
+  }
+  .trade-section-last-border{
+    height: 80%;
+  }
+  .copyright{
+    display: flex;
+    align-items: center;
   }
 
 }

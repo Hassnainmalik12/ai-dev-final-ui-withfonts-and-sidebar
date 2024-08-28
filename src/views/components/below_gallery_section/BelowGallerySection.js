@@ -57,7 +57,7 @@ const BelowGallerySection = () => {
                 <div className={"above-slider-text slider-text h-[5%] w-full  flex justify-center items-center"}>
                     <h1>AI DEV <span>Supporters & Partners</span></h1>
                 </div>
-                <div className={"h-84 logo-slider-res w-full"}>
+                <div className={" h-84 logo-slider-res w-full "}>
                     <LogoSlider/>
 
                 </div>

@@ -1,4 +1,4 @@
-import React, {useRef} from 'react';
+import React, {useEffect, useRef, useState} from 'react';
 import { motion, useTransform, useScroll } from 'framer-motion';
 import image1 from '../../images/Ai Dev Bot Website Code.gif';
 import image2 from '../../images/Ai Dev Bot Target.gif';
@@ -15,7 +15,7 @@ import TypingEffect from "../components/typing-effect/TypingEffect";
 
 const Example = () => {
     return (
-        <div className=" z-1">
+        <div className="z-1">
             <HorizontalScrollCarousel />
         </div>
     );
@@ -26,15 +26,34 @@ const HorizontalScrollCarousel = () => {
     const { scrollYProgress } = useScroll({
         target: targetRef,
     });
+    const [isLargeScreen, setIsLargeScreen] = useState(window.innerWidth > 768);
+    const x = useTransform(scrollYProgress, [0, 1], ["1%", "-85%"]);
 
-    const x = useTransform(scrollYProgress, [0, 1], ["1%", "-95%"]);
+
+
+
+    useEffect(() => {
+        const handleResize = () => {
+            setIsLargeScreen(window.innerWidth > 768);
+        };
+
+        window.addEventListener('resize', handleResize);
+
+        return () => {
+            window.removeEventListener('resize', handleResize);
+        };
+    }, []);
+
+
 
     return (
-        <section ref={targetRef} className="relative h-[300vh] " style={{background:"#1f1f1f"}}>
-            <div className="sticky top-0 flex h-screen items-center" style={{ transition: "10s" }}>
-                <motion.div style={{ x }} className="flex gap-4">
+        <section ref={targetRef} className=" relative h-[200vh]  example-height" style={{background:"#1f1f1f"}}>
+            {/*is line me flex-col*/}
+            <div className="position-sticky sticky top-0 flex h-screen items-center" style={{ transition: "10s ease in out" }}>
+            {/*is line me flex-col*/}
+                <motion.div style={isLargeScreen ? {x} : {}} className="card-res-vertical flex gap-4">
                     {cards.map((card) => {
-                        return <Card card={card} key={card.id} />;
+                        return <Card card={card} key={card.id}/>;
                     })}
                 </motion.div>
             </div>
@@ -42,56 +61,40 @@ const HorizontalScrollCarousel = () => {
     );
 };
 
-const Card = ({ card }) => {
-    const isSmallScreen = window.innerWidth <= 600;
+const Card = ({card}) => {
 
     return (
         <div
             key={card.id}
-            className={`group relative ${
-                isSmallScreen ? "w-screen h-auto" : "h-[700px] w-[1150px]"
-            }`}
+            className={`card-res-vertical-height group relative 
+                   h-[700px] w-[1150px]`}
             style={{
-                margin: isSmallScreen ? "0px -9px" : "-9px",
+                margin:  "-9px",
                 border: "1px solid grey",
             }}
         >
-            {isSmallScreen ? (
-                <div className="flex flex-col ">
-                    <img src={card.url} alt="" className="w-3/2 text-center h-auto card-img-res" />
-                    <div className=" text-2xl uppercase text-white flex flex-col justify-center items-center py-5">
-                        <h1 className="card-text-res card-text text-white w-4/5">
-                            <TypingEffect text={card.text} />
-                        </h1>
-                        <div className="buttons h-full w-full py-1  flex gap-5 justify-start">
-                            <button className="px-4 rounded-full">Launch</button>
-                            <button className="px-5 rounded-full">Docs</button>
-                        </div>
-                    </div>
-                </div>
-            ) : (
-                <div className="absolute inset-0 z-1 px-10 flex">
-                    <div className="h-full w-1/2 p-8 text-2xl font-black uppercase text-white flex justify-center items-center">
+{/*is line ko flex-col*/}
+                <div className="property-for-card-res absolute inset-0 z-1 px-10 flex">
+                    <div className="gallery-avatar-area-resp h-full w-1/2 p-8 text-2xl font-black uppercase text-white flex justify-center items-center">
                         <img src={card.url} alt="" />
                     </div>
 
-                    <div className="h-full w-1/2 text-2xl uppercase text-white flex flex-col justify-center items-center py-5">
-                        <div className="h-auto w-2/3 flex flex-col justify-between items-center">
+                    <div className="gallery-heading-res h-full w-48  text-2xl uppercase text-white flex flex-col justify-center items-center py-5">
+                        <div className="h-auto w-2/3  flex flex-col justify-between items-center">
                             <div className="h-auto w-full">
                                 <h1 className="text-white w-4/5">
                                     <TypingEffect text={card.text} />
                                 </h1>
                             </div>
                         </div>
-                        <div className="h-16 w-2/3 mt-10">
-                            <div className="buttons h-full w-full py-1 flex gap-5 justify-start">
+                        <div className="h-16 w-2/3 mt-10 ">
+                            <div className="buttons h-full w-full py-1  flex gap-5 justify-start">
                                 <button className="px-4 rounded-full">Launch</button>
                                 <button className="px-5 rounded-full">Docs</button>
                             </div>
                         </div>
                     </div>
                 </div>
-            )}
         </div>
     );
 };

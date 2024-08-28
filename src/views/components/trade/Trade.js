@@ -15,7 +15,7 @@ const Trade = ({ sectiontopRef}) => {
         <div className={" h-full w-full py-5"}>
             {/*first part marquee*/}
 
-            <div className={"trade-marquee-area  h-1/2 w-full flex justify-center items-center"}>
+            <div className={"trade-marquee-area  h-1/2 w-full flex justify-center items-center"} style={{background:'none'}}>
                 <div className={"marquee-text-area w-full flex flex-col justify-center items-center relative"}>
 
                     <marquee className={"custom-marquee"} width="100%" direction="left" height="225px"
@@ -108,7 +108,7 @@ const Trade = ({ sectiontopRef}) => {
                         </div>
                     </div>
                 </div>
-                <div className={"h-[40%] w-full px-5 main-color"}>
+                <div className={"copyright h-[40%] w-full px-5 main-color "}>
                     <h1 className={"copyright-text pt-4 text-2xl"}>© DEV AI 2024</h1>
                 </div>
             </div>
