@@ -5,7 +5,7 @@ import arrowDown from '../../../images/white-arrow-down.png'
 const ChatBot = () => {
     return (
         <div className={"chatbot-div-inside w-full h-full flex justify-center  items-center"}>
-            <div className={"w-[60%] h-[90%]  flex justify-start"}>
+            <div className={"chatbot-pos-res w-[60%] h-[90%]  flex justify-start"}>
                 <div className={"w-[70%] h-full inner light-grey-color-bg rounded-xl p-1"}>
                     <div className={"h-[20%] w-full  flex justify-between items-center"}>
 

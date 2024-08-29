@@ -121,13 +121,13 @@ const MainScreen = () => {
             {isSplashVisible ? (
                 <SplashScreen />
             ) : (
-                <div className="main w-screen h-screen" ref={sectiontopRef}>
+                <div className="mai  w-screen h-screen " ref={sectiontopRef}>
                     {/*burger button*/}
                     <div
-                        className="custom-height-7vh  w-full flex  items-center cursor-pointer fixed bg-red-7"
+                        className="custom-height-7vh  w-full flex  items-center cursor-pointer fixed "
                         onClick={toggleDiv1}
                     >
-                        <div className="w-16 h-16 mt-6 flex hidden items-center justify-center ">
+                        <div className="w-16 h-16 mt- flex hidden items-center justify-center ">
                             <img src={burger} alt="Burger Menu" className="h-8"/>
                         </div>
                     </div>
@@ -212,16 +212,16 @@ const MainScreen = () => {
                             </div>
                             <p className="text-container1 uppercase Ai-dev-p Ai-dev-bottom-text-resp w-full flex justify-center items-center">
                                 AI DEV [
-                                <span className="text-container">
-        <span className="font-bold green-text">
-            Craft websites, Deploy smart contracts, Predict Prices
+                                <p className="text-container">
+        <span className="font-bold green-text lower-span-block">
+            Craft websites, Deploy smart <span className={"contract-block"}>contracts, Predict Prices</span>
         </span>
-        <span className="pl-2  and-black-text">AND</span>
+        <p className="pl-2 inline and-black-text">AND</p>
         <span className="pl-2 font-bold">
-            Snipe trades
+            Snipe trades <span className={"bracket text-black"}>]</span>
         </span>
-    </span>
-                                ]
+    </p>
+
                                 <p className="additional-text pl-1">All directly through your Telegram!</p>
                             </p>
 
@@ -330,7 +330,7 @@ const MainScreen = () => {
                                 </div>
                             </div>
                         </div>
-                        <div className="custom-width-15 h-full flex justify-center items-center relative ">
+                        <div className="chatbot-div-main custom-width-15 h-full flex justify-center items-center relative ">
                             <div className="fixed w-2/6 h-2/6 z-10 flex justify-center items-center hover:cursor-pointer"
                                  onClick={toggleDiv}>
                                 <img src={Chatbot} alt="Chatbot" className="chatbot-img h-max w-24"/>
@@ -395,7 +395,7 @@ const MainScreen = () => {
                         className={"marquee-text-area-upper custom-height-70  w-full main-color flex flex-col justify-center items-center"}>
 
                         <marquee className="custom-marquee" behavior="scroll" width="100%" direction="left"
-                                 height="250px"
+                                 height="240px"
                                  scrollamount="13">
                             <h1 style={{display: "inline-block", marginRight: "50px"}}> Website AI x Sniper AI x Token
                                 Deployer
@@ -409,7 +409,7 @@ const MainScreen = () => {
                                 MEME Generator x Uncensored AI</h2>
                         </marquee>
                         <marquee className="custom-marquee" behavior="scroll" width="100%" direction="right"
-                                 height="   250px"
+                                 height="   240px"
                                  scrollamount="13">
                             <h2 style={{display: "inline-block", marginRight: "50px"}}> Website AI x Sniper AI x Token
                                 Deployer

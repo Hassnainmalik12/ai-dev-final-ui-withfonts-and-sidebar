@@ -51,11 +51,26 @@ html, body {
     width: 40%;
     height: 7px;
     border-radius: 20px;
-    background: green;
+    background: #2ecc71;
   }
   p {
     color: aliceblue;
     font-size: 16px;
     text-transform: uppercase;
   }
+}
+
+@media (min-width: 320px) and (max-width: 599px) {
+
+  .splash-bar-inner{
+    width: 80% !important;
+    height: 7px;
+    border-radius: 20px;
+    background: #2ecc71;
+  }
+  .center-box {
+    height: 50vh;
+    width: 60vw;
+  }
+
 }

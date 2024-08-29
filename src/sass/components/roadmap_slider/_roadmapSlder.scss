@@ -19,7 +19,7 @@
 }
 
 .roadmap-slider-slide {
-  width: 40%; /* Reduce the width of each card */
+  //width: 40%; /* Reduce the width of each card */
   box-sizing: border-box;
   height: 500px;
   display: flex;
@@ -27,7 +27,7 @@
   align-items: center;
 .roadmap-slider-card{
   background: linear-gradient(104deg, #1f1f1f 11.2%, #303030 34.8%);
-  width: 280px;
+  width: 350px;
 }
 }
 
@@ -115,6 +115,10 @@
 .roadmap-button{
   padding: 10px 0;
 }
+  .roadmap-slider-card{
+    background: linear-gradient(104deg, #1f1f1f 11.2%, #303030 34.8%);
+    width: 280px !important;
+  }
 }
 
 

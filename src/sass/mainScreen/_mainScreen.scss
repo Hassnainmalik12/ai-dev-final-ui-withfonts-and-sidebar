@@ -8,6 +8,31 @@ body{
   overflow-x: hidden;
   overflow-y: auto;
 }
+
+.marquee-text-area-upper{
+  .custom-marquee{
+    h1{
+      font-size: 190px;
+      font-family: "Anton", sans-serif;
+      font-weight: 400;
+      font-style: normal;
+      color: white;
+      letter-spacing: 3px;
+    }
+    h2{
+      font-size: 210px;
+      -webkit-text-stroke-width: 5px ;
+      -webkit-text-stroke-color: white;
+      font-family: monospace;
+      font-weight: 400;
+      font-style: normal;
+      color: transparent;
+      letter-spacing: 3px;
+    }
+  }
+}
+
+
 .text-green-navbar{
   color: #2ecc71;
   border-left: 3px solid #2ecc71;
@@ -42,7 +67,7 @@ background-size: 100%;
   //background-image: ;
 }
 .main {
-  background: #dadee0;
+  //background: #dadee0;
 
   .mid-ai-text-area{
     //background: #dadee0;
@@ -57,31 +82,10 @@ background-size: 100%;
 
   }
   .and-black-text{
-    color: black;
+    color: black !important;
   }
 
-  .marquee-text-area-upper{
-    .custom-marquee{
-      h1{
-        font-size: 190px;
-        font-family: "Anton", sans-serif;
-        font-weight: 400;
-        font-style: normal;
-        color: white;
-        letter-spacing: 3px;
-      }
-      h2{
-        font-size: 210px;
-        -webkit-text-stroke-width: 5px ;
-        -webkit-text-stroke-color: white;
-        font-family: monospace;
-        font-weight: 400;
-        font-style: normal;
-        color: transparent;
-        letter-spacing: 3px;
-      }
-    }
-  }
+
 
 
 }
@@ -368,7 +372,7 @@ background-size: 100%;
     margin-right: 20px;
   }
   .chatbot-div{
-  margin-bottom: -60%;
+  //margin-bottom: -60%;
     width: 200px;
     margin-right: 170px;
 
@@ -475,25 +479,38 @@ background-size: 100%;
   }
   .main-color{
 
-    //background-image: url("./images/background.png");
-    background-size: 100%;
-    background: #e6e6e6;
+    //background-size: 100%;
+    //background: #e6e6e6;
 
   }
   .hidden{
     display: flex;
     align-items: center;
   }
+  //.custom-height-7vh{
+  //  height: 0;
+  //}
 
   .logo-res{
-    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center !important;
+    height: 80%;
+    width: 80%;
+    //background: #1c64f2;
   }
   .logo-res-full{
-    height: 23vh;
+    height: 20vh;
+    //background: green;
+    //margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
   }
   .logo{
+    margin-top: 30px;
     img{
-      height: 80%;
+      height: 60%;
     }
   }
 
@@ -501,12 +518,21 @@ background-size: 100%;
     width: 0;
   }
   .chatbot-img{
-    margin-right: 40px;
+    //margin-right: 60px;
   }
   .chatbot-div{
-    margin-bottom: -70%;
-    width: 200px;
-    margin-right: 0px;
+    margin-bottom: -50%;
+    width: 400px;
+
+  }
+
+  .chatbot-pos-res{
+    justify-content: center;
+  }
+  .chatbot-div-main{
+    width: 100px;
+    margin-right: 20px;
+    //position: relative;
 
   }
   .inner{
@@ -546,8 +572,33 @@ background-size: 100%;
       //padding-right:  10px;
     }
     p{
-      //padding: 0 20px;
       font-size:11px !important;
+    }
+    .text-container{
+      //padding: 1px 20px;
+      text-align: center;
+      width: 95vw;
+      .bracket{
+        font-weight: normal !important;
+        color: black!important;
+      }
+    span{
+      font-size: 11px !important;
+    }
+      .and-black-text{
+
+        color: black ;
+        text-align: center;
+      }
+      .lower-span-block{
+        padding: 0 10px;
+        display: block;
+        text-align: center;
+        .contract-block{
+          display: block;
+          text-align: center;
+        }
+      }
     }
   }
 
@@ -564,6 +615,14 @@ background-size: 100%;
     display: block; /* Ensure the additional text is on a new line */
     /* Adjust spacing if needed */
     text-align: center; /* Center align the text */
+  }
+  .ai-dev-area-height-res{
+  height: 60%;
+    //background: #2ecc71;
+  }
+  .bottom-bar-res{
+    height: 12vh;
+    //background: rebeccapurple;
   }
 
   .Ai-dev-text{
@@ -641,6 +700,10 @@ background-size: 100%;
         letter-spacing: 3px;
       }
     }
+  }
+  .main{
+    //padding: 10px 10px;
+
   }
 
 }
